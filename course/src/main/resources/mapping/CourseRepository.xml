@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gloryroad.repository.CourseRepository">
+
+    <select id="findAll" resultType="com.gloryroad.entity.Course">
+		select * from t_course limit #{param1},#{param2}
+	</select>
+
+	<select id="findByCode" resultType="com.gloryroad.entity.Course">
+		select code,name,teacher,time from t_course where code = #{code}
+	</select>
+
+    <insert id="add" parameterType="com.gloryroad.entity.Course">
+		insert into t_course(code, name ,teacher,time) values(#{code},#{name},#{teacher},#{time})
+	</insert>
+
+    <delete id="deleteByCode" parameterType="String">
+		delete from t_course where code = #{code}
+	</delete>
+
+</mapper>

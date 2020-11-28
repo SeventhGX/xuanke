@@ -12,6 +12,7 @@
         <module>eurekaserver</module>
         <module>configserver</module>
         <module>course</module>
+        <module>account</module>
     </modules>
 
     <!-- 引入Spring Boot的依赖 -->
