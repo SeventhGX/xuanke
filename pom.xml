@@ -6,7 +6,11 @@
 
     <groupId>com.gloryroad</groupId>
     <artifactId>xuanke</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>eurakaserver</module>
+    </modules>
 
     <!-- 引入Spring Boot的依赖 -->
     <parent>
