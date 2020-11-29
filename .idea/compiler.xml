@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eurekaserver" />
         <module name="course" />
+        <module name="client" />
         <module name="configserver" />
         <module name="account" />
       </profile>
@@ -19,6 +20,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account" options="-parameters" />
+      <module name="client" options="-parameters" />
       <module name="configserver" options="-parameters" />
       <module name="course" options="-parameters" />
       <module name="eurakaserver" options="-parameters" />
